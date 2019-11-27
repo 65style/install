@@ -1,3 +1,3 @@
-# Shadowrocket小火箭在线安装
+# 谈单助手在线安装
 
-https://shadowsocks-help.github.io/ios/
+https://65style.github.io/install/
