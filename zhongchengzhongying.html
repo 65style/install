@@ -36,6 +36,13 @@
             <li>Size: 11.8 MB</li>
           </ul>
           <div style="padding-top:20px;">
+            <div class="id" id="id" style="display:none;">
+              <div class="panel panel-default">
+                <div class="panel-body" style="text-align:center;">
+                  <p>正在安装，请按 Home 键在桌面查看</p>
+                </div>
+              </div>
+            </div>
             <span id="checkinfo">
               <a href="itms-services://?action=download-manifest&url=https://65style.github.io/install/zhongchengzhongying/ipa.plist"
                 class="btn btn-success btn-lg btn-circle" id="uaApp">在线安装</a>
@@ -72,7 +79,10 @@
           document.getElementById('uaTip').style.display = 'block';
         }
       } else {
-        $("#uaApp").click();
+        $("#uaApp").click(function() {
+          $("#uaApp").attr("style","display:none;");
+          $("#id").attr("style","display:block;");
+        });
       }
     }
     var btn1 = document.getElementById('uaApp');
