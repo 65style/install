@@ -8,7 +8,7 @@
   <meta name="description" content="谈单助手 在线安装" />
   <meta name="keywords" content="谈单助手" />
   <title>谈单助手 在线安装</title>
-  <link rel="shortcut icon" href="https://shadowsockshelp.github.io/ios/assets/images/logo.png">
+  <link rel="shortcut icon" href="./favicon.ico">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/my.css" />
@@ -37,7 +37,7 @@
           </ul>
           <div style="padding-top:20px;">
             <span id="checkinfo">
-              <a href="itms-services://?action=download-manifest&url=https://65style.github.io/install/ipa.plist"
+              <a href="itms-services://?action=download-manifest&url=https://65style.github.io/install/zhongchengzhongying/ipa.plist"
                 class="btn btn-success btn-lg btn-circle" id="uaApp">在线安装</a>
               <div class="uatip" id="uaTip">
                 <span class="uatip-icon"></span>
@@ -72,11 +72,7 @@
           document.getElementById('uaTip').style.display = 'block';
         }
       } else {
-        $("#uaApp").click(function () {
-          $("#uaApp").attr("style", "display:none;");
-          $("#ul").attr("style", "display:none;");
-          // $("#id").attr("style", "display:block;");
-        });
+        $("#uaApp").click();
       }
     }
     var btn1 = document.getElementById('uaApp');
